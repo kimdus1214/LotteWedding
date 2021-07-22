@@ -1,0 +1,208 @@
+.container{
+    padding: 0;
+}
+
+#sub_titWrap{
+    width: 100%;
+    background: #f4efeb;
+    height: 180px;
+}
+.sub01_2{
+    height: 300px !important;
+    margin-bottom: 80px;
+}
+
+.sub_tit img{
+    margin-top: 50px;
+    width: 14px;
+}
+.sub_tit h1{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    /* padding-top: 35px; */
+}
+
+
+
+
+/* 검색어를 입력해주세요 Area
+================================================================ */
+#inputArea{
+    margin-top: 50px;
+}
+#inputArea div{
+    width: 100%;
+    position: relative;
+    /*width: 550px;
+    left: 50%;
+    margin-left: -275px; */
+}
+input {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0.625em;
+    box-sizing: border-box;   
+    border:0;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ddd;
+}
+
+button[name=keySearch] {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/searchbar_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border:0;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    box-sizing: border-box;   
+}
+/* 검색어를 입력해주세요 Area
+================================================================ */
+
+
+
+/* faqTabMenu Area */
+#faqTabMenu{
+    padding-top: 100px;
+    margin: 0;
+}
+#faqTabMenu li{
+    box-sizing: border-box;
+    padding: 0.625rem 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #ddd;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.faqActive{
+    background-color: #957963;
+    color: #fff;
+}
+
+
+
+/* Faq Area 
+=========================================================== */
+.faq{
+    margin-top: 100px;
+    border-top: 2px solid #666;
+}
+.faq li{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+.qustion{
+    display: block;
+    width: 100%;
+    height: 80px;
+    /* padding-left: 50px; */
+    background-image: url('../images/q_img.png');
+    background-repeat: no-repeat;
+    background-position: 30px 32px;
+    background-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;    
+    box-sizing: border-box;
+    line-height: 80px;
+    border-bottom: 1px solid #666;
+}
+.qustion span {
+    margin-left: 100px;
+    color: #333;
+}
+.q_explian{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.answer{
+    width: 100%;
+    height: 350px;
+    background-color: #F4F4F3;
+    background-image: url('../images/a_img.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 30px 35px;
+    padding-left: 6.25em;
+    padding-top: 1.875rem;
+    box-sizing: border-box;
+    /* margin-top: 1px; */
+    border-bottom: 1px solid #666;
+}
+.answer h4{
+    width: 90%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 170%;
+    letter-spacing: -1px;
+}
+.answer p{
+    width: 90%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: -1px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .faq{
+        margin-top: 50px;
+        border-top: 2px solid #666;
+    }
+    .qustion{
+        background-position: 0.56em 32px;
+        background-size: 15px;
+        line-height: 100%;
+        /* padding-top: 13px; */
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    .qustion span {
+        display: block;
+        margin-left: 1.5em;   
+        font-size: 0.937rem; 
+        width: 100%;  
+    }
+    .q_explian{
+        margin-top: 8px;
+    }
+    .answer{
+        background-size: 15px;
+        background-position: 0.75em 32px; 
+        padding-left: 2.5em;
+        padding-top: 18px;    
+    }
+    .answer h4{
+        font-size: 0.937rem;
+        line-height: 150%;
+        letter-spacing: -0.5px;
+        font-weight: 500;
+    }
+    .answer p{
+        font-size: 0.937rem;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+
+}
+
+
+

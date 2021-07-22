@@ -1,0 +1,364 @@
+.container{
+    padding: 0;
+}
+
+#sub_titWrap{
+    width: 100%;
+    background: #f4efeb;
+    height: 250px;
+}
+.sub01_2{
+    height: 300px !important;
+    margin-bottom: 80px;
+}
+
+.sub_tit img{
+    margin-top: 50px;
+    width: 14px;
+}
+.sub_tit h1{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    /* padding-top: 35px; */
+}
+
+.sub_tit p{
+    font-size: 1.1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 20px;
+    color: #565656;
+    letter-spacing: -1px;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+
+.sub_tit_small{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 0.15em;
+    box-sizing: border-box;
+}
+.sub_tit_small img{
+    width: 100%;
+    max-width: 517px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.sub_tit_small h3{
+    font-size: 1.3rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+.sub_tit_small p{
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #565656;
+}
+
+.card_tit{
+    font-size: 1.25rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+}
+.sub_content{
+    margin: 0;
+}
+.sub_content div{
+    box-sizing: border-box;
+}
+
+.card_img01{
+    width: 100%;
+    max-width: 300px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.card-body p{
+    font-size: 1.05rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #565656;
+    margin-bottom:65px;
+}
+.card_img02{
+    width: 100%;
+}
+
+/* sub_01_1 */
+section{
+    width: 100%;
+    background-color: #f7f7f7;
+}
+.mileage_wrap1{
+    margin-top: 50px;
+}
+.mileage_wrap{
+    margin-top: 35px;
+}
+
+.mileage_wrap .card-header{
+    background-color: #a58e7c;
+    color: #fff;
+}
+.card-headerLine{
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+.mileage_table table{
+    width:100%;
+    /* border: 2px solid #555; */
+    border-collapse: collapse;
+    border: 0;
+    font: 1rem 'Noto Sans KR', sans-serif;
+}
+th, td {
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 1.5625em 0.5em;
+    text-align: center;
+    width: 33.3%;
+  }
+/* .borderline{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+} */
+td[rowspan]{
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.lowerPrice{
+    background-color: #fdfaf7;
+}
+.middlePrice{
+    background-color: #faf4ef;
+}
+.highPrice{
+    background-color: #f9efe6;
+}
+.give{
+    background-color: #f0ebe7;
+}
+
+.caption{
+    font: 1rem 'Noto Sans KR', sans-serif;
+}
+
+.mileage_content{
+    box-sizing: border-box;
+    text-align: left;
+    font: 1rem 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.5px;
+    padding: 1.25rem;
+    line-height: 180%;
+}
+.mileage_content p{
+    margin: 0;
+}
+.mileage_content span{
+    color: #a63030;
+    font-weight: 500;
+}
+
+.caution_wrap{
+    margin: 0;
+}
+.caution{
+    padding: 0;
+}
+
+.caution_content{
+    box-sizing: border-box;
+    text-align: left;
+    font: 1rem 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.5px;
+    padding: 1.25rem;
+    line-height: 180%;
+}
+.caution h4{
+    text-align: center;
+}
+.caution_content p{
+    padding-left: 1rem;
+    margin: 0;
+}
+.caution_content span{
+    color: #a63030;
+    font-weight: 500;
+}
+
+
+/* sub01_2 */
+.consulting{
+    margin-top: 20px;
+    padding-left: 0.937rem;
+    padding-right: 0.937rem;
+    box-sizing: border-box;
+    /* border-radius: 0 100px 100px 0; */
+}
+.consulting_wrap{
+    margin:0;
+    flex-direction: row;
+    background-color: #1c2126; 
+}
+.consulting_wrap li{
+    box-sizing: border-box;
+}
+.consulting_content{
+    margin-top: 80px;
+}
+.consulting_img{
+    height: 386px;
+    overflow: hidden;
+}
+.consulting_img img{
+    width: 100%;
+    max-width: 328px;
+    margin-top: 20px;
+}
+.consulting_tit{
+    font-size: 1.35rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.consulting_content h4{
+    margin-top: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #d0a581;
+}
+.consulting_content span{
+    font-weight: 500;
+}
+
+
+#consulting_btn a{
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    background-color: #d0a581;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
+
+#consulting_btn .consulting_btn01{
+    background-color: #917761;
+}
+#consulting_btn .consulting_btn02{
+    background-color: #448bb0;
+}
+#consulting_btn .consulting_btn03{
+    background-color: #4d8879;
+}
+#consulting_mapWrap{
+    display: flex;
+    margin-bottom: 35px;
+}
+#consulting_mapWrap li{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-right: 20px;
+}
+#consulting_mapWrap li:last-child{
+    margin-right: 0px;
+}
+
+@media screen and (max-width:1200px) {
+    #consulting_mapWrap{
+        display: block;
+    }
+    #consulting_mapWrap li{
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 3px;
+    }
+}
+@media screen and (max-width:768px) {
+    .consulting_content {
+        text-align: center;
+    }
+    .consulting_content{
+        margin-top: 50px;
+    }
+
+
+
+}
+
+
+/* Map Area */
+#mapTabMenu{
+    padding-top: 80px;
+    margin: 0;
+}
+#mapTabMenu li{
+    box-sizing: border-box;
+    padding: 0.625em 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #ddd;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.mapActive{
+    background-color: #957963;
+    color: #fff;
+}
+
+.mapWrap{
+    margin-top: 35px;
+    padding:1.56rem 1.25em 1.25rem 1.25em;
+    border-top: 2px solid #666;
+    border-bottom: 1px solid #666;
+}
+.mapWrap div{
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    /* padding-left: 25px; */
+}
+.spot{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #333;
+}
+.address,.mapTel{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+}
+#Googlemap div{
+    padding: 0;
+    margin-top: 25px;
+}
+#map_busan{
+    display: none;
+}
+#map_Daegu{
+    display: none;
+}

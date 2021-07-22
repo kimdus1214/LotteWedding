@@ -1,0 +1,137 @@
+.container{
+    padding: 0;
+}
+
+#sub_titWrap{
+    width: 100%;
+    background: #f4efeb;
+    height: 180px;
+}
+.sub01_2{
+    height: 300px !important;
+    margin-bottom: 80px;
+}
+
+.sub_tit img{
+    margin-top: 50px;
+    width: 14px;
+}
+.sub_tit h1{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    /* padding-top: 35px; */
+}
+
+
+/* Map Area */
+#mapTabMenu{
+    padding-top: 80px;
+    margin: 0;
+}
+#mapTabMenu li{
+    box-sizing: border-box;
+    padding: 0.625em 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #ddd;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.mapActive{
+    background-color: #957963;
+    color: #fff;
+}
+
+
+/* 스튜디오 Area 
+=========================================================== */
+.shopWrap{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    /* flex-grow: 4; */
+}
+.shopWrap li{
+    width: 24.4%;
+    height: 360px;
+    margin-right: 0.8%;
+    margin-bottom: 35px;
+    padding: 0.625em;
+    box-sizing: border-box;
+    background: #f4efeb;  
+    border-radius: 0 0 0 30px;
+}
+@media screen and (max-width:992px) {
+    .shopWrap li{
+        width: 49.6%;
+        margin-right: 0.8%;        
+    }
+    .shopWrap li:nth-child(2n){
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:769px) {
+    .shopWrap li{ 
+        width: 98%;
+        margin-left: 1%;
+
+    }
+    .shopimg img{
+        height: auto;
+    }
+}
+
+.shopWrap li:nth-child(4n){
+    margin-right: 0;
+}
+.shopWrap a{
+    display: block;
+    width: 100%;      
+}
+.shopimg {
+    width: 100%;
+    /* max-width: 400px; */
+    height: 180px;
+    position: relative;
+}
+.shopimg img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.shopimg span{
+    position: absolute;
+    top:0;
+    right: 0;
+    color: #ffffff;
+    background: #e29090;
+    display: block;
+    padding: 0.625em 1.25rem;
+    border-radius: 0 0 0 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.shoptext{
+    margin-top: 30px;
+    padding: 0.625em;
+}
+.shoptext h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+.shoptext p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+}
+
+#map_busan{
+    display: none;
+}
+#map_Daegu{
+    display: none;
+}

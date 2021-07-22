@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotte Wedding</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/1400.css">    
+    <link rel="stylesheet" href="css/760.css">
+    <link rel="stylesheet" href="css/360.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li,ol{
+            list-style: none;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        img, svg {
+            vertical-align: baseline;
+        }
+        *, ::after, ::before {
+            box-sizing: initial;
+        }
+        .active{
+            color: #50473e !important;
+        }
+        .active::after{
+            transform: scaleX(1) !important;
+        }
+    </style>    
+</head>
+<body>
+     <!-- mo,pc 헤더영역 -->
+     <div id="mobile_header">
+        <div id="mobile_top_wrap">
+            <a class="toggle" href="#"><img src="images/menu_toggle.jpg"></a>
+            <a class="m_logo" href="index.html"><img src="images/mobile_logo.jpg"></a>
+            <a class="m_login" href="login.html"><img src="images/mobile_login.jpg"></a>      
+        </div>
+    </div>    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              롯데웨딩소개
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <!-- <a href="#">롯데웨딩소개</a> -->
+                <ul>
+                    <li><a href="sub01.html">롯데웨딩소개</a></li>
+                    <li><a href="sub01_1.html">웨딩마일리지</a></li>
+                    <li><a href="sub01_2.html">웨딩컨시어지</a></li>
+                    <li><a href="sub01_3.html">방문안내</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+             웨딩컨설팅
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <!-- <a href="#">웨딩컨설팅</a> -->
+                <ul>                            
+                    <li><a href="sub02_1.html">스튜디오</a></li>
+                    <li><a href="#">드레스</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+             웨딩스토리
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <!-- <a href="#">웨딩스토리</a> -->
+                <ul>                            
+                    <li><a href="#">웨딩TIP</a></li>
+                    <li><a href="#">웨딩TALK</a></li>                            
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                커뮤니티
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <!-- <a href="#">커뮤니티</a> -->
+                  <ul>                            
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">제휴문의</a></li>                      
+                  </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="gnbSearchInput">
+		<div class="inputArea">
+			<input type="text" id="totalSearch" name="totalSearch" placeholder="검색어를 입력해 주세요" title="검색어를 입력해 주세요">
+			<a href="javascript:void(0);" class="btnSearch jsGNBEv" data-id="totalSearch"><img src="images/btnGnbSearch.png" alt="검색"></a>
+		</div>
+		<a href="javascript:void(0);" class="btnSearchClose"><img src="images/btnGnbSearchClose.png" alt="닫기"></a>
+	</div>
+    <header>      
+        <div class="top_menu">
+            <div class="top_menu_wrap">
+                <a href="login.html">로그인</a>
+                <a href="#">웨딩멤버스가입</a>
+                <a href="#">마이웨딩</a>
+            </div>
+        </div>
+        <nav>
+            <a class="logo" href="index.html"></a>
+            <div class="main_nav">
+                <ul>
+                    <li class="main_nav_gnb">
+                        <a href="sub01.html">롯데웨딩소개</a>
+                        <ul class="main_nav_depth">                            
+                            <li><a href="sub01.html">롯데웨딩소개</a></li>
+                            <li><a href="sub01_1.html">웨딩마일리지</a></li>
+                            <li><a href="sub01_2.html">웨딩컨시어지</a></li>
+                            <li><a href="sub01_3.html">방문안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_nav_gnb">
+                        <a href="sub02_1.html">웨딩컨설팅</a>
+                        <ul class="main_nav_depth">                            
+                            <li><a href="sub02_1.html">스튜디오</a></li>
+                            <li><a href="#">드레스</a></li>
+                            <li><a href="#">메이크업</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_nav_gnb">
+                        <a href="#">웨딩스토리</a>
+                        <ul class="main_nav_depth">                            
+                            <li><a href="#">웨딩TIP</a></li>
+                            <li><a href="#">웨딩TALK</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="main_nav_gnb">
+                        <a href="faq.html">커뮤니티</a>
+                        <ul class="main_nav_depth endLine">                            
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">제휴문의</a></li>
+                        </ul>
+                    </li>
+                </ul>                
+            </div>
+            <a class="search" href="#"></a>
+        </nav>        
+    </header>
+    <!-- mo,pc 헤더영역 end-->
+
+
+
+
+    <main>        
+        <div id="main_img_wrap">
+            <ul class="main_img">
+                <li class="main01">
+                    <div class="main_text_wrap">
+                        <h6>LOTTE EVENTS</h6>
+                        <h3>소개 이벤트</h3>
+                        <p>웨딩멤버스를 추천해주세요.</p>
+                    </div>
+                </li>
+                <li class="main02">
+                    <div class="main_text_wrap">
+                        <h6>LOTTE EVENTS</h6>
+                        <h3>웨딩멤버스</h3>
+                        <p>쇼핑&리빙 스페셜딜</p>
+                    </div>
+                </li>
+                <li class="main03">
+                    <div class="main_text_wrap">                        
+                        <h6>LOTTE EVENTS</h6>
+                        <h3>롯데웨딩 x 생활공작소에서</h3>
+                        <p>제안하는 웨딩답례품 5종</p>
+                    </div>
+                </li>
+            </ul>                
+        </div>
+        <div id="main_arrow">
+            <span class="main_arrow_left"><img src="images/arrow_left.png"></span>
+            <span class="main_arrow_right"><img src="images/arrow_right.png"></span>
+        </div>        
+    </main>
+    <section>
+        <article id="wedding_wrap">
+            <div class="main_tit">
+                <img src="images/tit_dia.png">
+                <h3>LOTTE WEDDING</h3>
+                <p>롯데백화점의 웨딩 고객님을 위한 특화 서비스</p>
+            </div>
+            <div class="main_content">
+                <div class="wedding_text_wrap">
+                    <span>[ WEDDING MILES ]</span>
+                    <h4>웨딩마일리지</h4>
+                    <p>9개월 간 롯데백화점 전점에서<br>
+                        웨딩마일리지 적립 후 금액대별<br>
+                        상품권 증정 서비스                        
+                    </p>
+                    <div class="btn_wrap">
+                        <a href="sub01_1.html">MORE</a>
+                    </div>
+                </div>
+                <div class="wedding_text_wrap">
+                    <span>[ WEDDING CONSULTING ]</span>
+                    <h4>웨딩 컨설팅 상품</h4>
+                    <p>스튜디오/드레스/메이크업 등<br>
+                        80여개의 웨딩 컨설팅 상품 제안
+                    </p>
+                    <div class="btn_wrap">
+                        <a href="sub02_1.html">MORE</a>
+                    </div>
+                </div>
+                <div class="wedding_text_wrap">
+                    <span>[ WEDDING PLANNING ]</span>
+                    <h4>웨딩 플래닝</h4>
+                    <p>전문 웨딩컨시어지의 1:1 맞춤<br>
+                        고품격 웨딩 플래닝 서비스
+                    </p>
+                    <div class="btn_wrap">
+                        <a href="sub01_2.html">MORE</a>
+                    </div>
+                </div> 
+                <ul class="btn_arrow_wrap">
+                    <li class="btn_arrow_left"></li>
+                    <li class="btn_arrow_right"></li>
+                </ul>
+                <ul class="btn_arrow_wrap_mo">
+                    <li class="btn_arrow_left_mo"></li>
+                    <li class="btn_arrow_right_mo"></li>
+                </ul>      
+            </div>
+            <div class="wedding_img_wrap">
+                <ol>
+                    <li><img src="images/weddingImg01.jpg"></li>
+                    <li><img src="images/weddingImg02.jpg"></li>
+                    <li><img src="images/weddingImg03.jpg"></li>
+                </ol>
+            </div>
+            <div class="wedding_img_wrap_mobile">
+                <ol>
+                    <li><img src="images/weddingImg01.jpg"></li>
+                    <li><img src="images/weddingImg02.jpg"></li>
+                    <li><img src="images/weddingImg03.jpg"></li>
+                </ol>
+            </div>
+            <div class="veiwbtn_wrap">
+                <a href="sub01.html" class="veiwBtn">자세히보기</a>
+             </div>
+        </article>        
+
+        <article id="WeddingPick_wrap">
+            <div class="main_tit">
+                <img src="images/tit_dia.png">
+                <h3>LOTTE WEDDING PICK</h3>
+                <p>롯데백화점 웨딩멤버스의 이야기를 만나보세요</p>
+            </div>
+            <ul class="WeddingPick_content">
+                <li>
+                    <div class="event_wrap">
+                        <span>LOTTE WEDDING EVENT</span>
+                        <p>롯데웨딩의 진행중인 다양한<br>
+                            이벤트를 만나보세요
+                        </p>
+                        <a href="#">MORE</a>
+                    </div>
+                </li>
+                <li class="pc_weddingPick_gallery_wrap">
+                    <div class="weddingPick_gallery top">
+                        <img src="images/weddingPick01.jpg">
+                        <h6>#롯데백화점과 갤러리 웨딩이 함께하는 웨딩박람회</h6>
+                        <span>일루전 시스루로 여성스러움과 화사함을 동시에</span>
+                    </div>
+                    <div class="weddingPick_gallery">
+                        <img src="images/weddingPick02.jpg">
+                        <h6>#나의결혼이야기 사연 공모</h6>
+                        <span>결혼 준비과정에서 겪었던 다양한 에피소드 공유하기</span>
+                    </div>
+                </li>
+                <li class="mo_weddingPick_gallery_wrap">
+                    <div class="mo_weddingPick_gallery">
+                        <div class="weddingPick_gallery">
+                            <img src="images/weddingPick01.jpg">
+                            <h6>#롯데백화점과 갤러리 웨딩이 함께하는 웨딩박람회</h6>
+                            <span>일루전 시스루로 여성스러움과 화사함을 동시에</span>
+                        </div>
+                        <div class="weddingPick_gallery">
+                            <img src="images/weddingPick02.jpg">
+                            <h6>#나의결혼이야기 사연 공모</h6>
+                            <span>결혼 준비과정에서 겪었던 다양한 에피소드 공유하기</span>
+                        </div>
+                        <div class="weddingPick_gallery hidden">
+                            <img src="images/weddingPick03.jpg">
+                            <h6>#롯데백화점과 갤러리 웨딩이 함께하는 웨딩박람회</h6>
+                            <span>아름다운 드레스와 함께라면<br>
+                                꽃과 같은 당신은 보다 아름답게 빛날거예요</span>
+                        </div>
+                        <div class="weddingPick_gallery hidden">
+                            <img src="images/weddingPick04.jpg">
+                            <h6>#나의결혼이야기 사연 공모</h6>
+                            <span>결혼 준비과정에서 겪었던 다양한 에피소드 공유하기</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="soonHide">
+                    <div class="weddingPick_gallery top">
+                        <img src="images/weddingPick03.jpg">
+                        <h6>#롯데백화점과 갤러리 웨딩이 함께하는 웨딩박람회</h6>
+                        <span>아름다운 드레스와 함께라면<br>
+                            꽃과 같은 당신은 보다 아름답게 빛날거예요</span>
+                    </div>
+                    <div class="weddingPick_gallery">
+                        <img src="images/weddingPick04.jpg">
+                        <h6>#나의결혼이야기 사연 공모</h6>
+                        <span>결혼 준비과정에서 겪었던 다양한 에피소드 공유하기</span>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="veiwBtn">자세히보기</a>
+        </article>
+        <article id="online_inquiry_wrap">
+            <div class="online_inquiry">
+                <strong>ONLINE INQUIRY</strong>
+                <span>롯데웨딩을 이용하시면서 궁금한 사항에 대한<br>
+                    고객님의 문의 내용을 작성해 주세요.
+                </span>
+                <a href="#">바로가기</a>
+            </div>
+        </article>
+        <article id="Wedding_consulting_wrap">
+            <div class="main_tit">
+                <img src="images/tit_dia.png">
+                <h3>WEDDING CONSULTING</h3>
+                <p>어떤 웨딩컨설팅이 필요하세요?</p>
+            </div>
+            <div class="Wedding_consulting_content">
+                <ul class="tab_btn">
+                    <li class="active">스튜디오</li>
+                    <li>드레스</li>
+                    <li>메이크업</li>
+                    <li>기타</li>
+                </ul> 
+                <div class="tab_content_wrap">
+                    <div class="tab_content wrap01">
+                        <img src="images/tab_img01.jpg">
+                        <img src="images/tab_img02.jpg">
+                        <img src="images/tab_img03.jpg">
+                        <img src="images/tab_img04.jpg">
+                    </div>
+                    <div class="tab_content wrap02">
+                        <img src="images/tab_img05.jpg">
+                        <img src="images/tab_img06.jpg">
+                        <img src="images/tab_img07.jpg">
+                        <img src="images/tab_img08.jpg">
+                    </div>
+                    <div class="tab_content wrap03">
+                        <img src="images/tab_img09.jpg">
+                        <img src="images/tab_img10.jpg">
+                        <img src="images/tab_img11.jpg">
+                        <img src="images/tab_img12.jpg">
+                    </div>
+                    <div class="tab_content wrap04">
+                        <img src="images/tab_img13.jpg">
+                        <img src="images/tab_img14.jpg">
+                        <img src="images/tab_img15.jpg">
+                        <img src="images/tab_img16.jpg">
+                    </div>
+                 </div>        
+            </div>
+            <a href="sub02_1.html" class="veiwBtn">MORE</a>
+        </article>
+    </section>
+    <footer>
+        <div class="footer_wrap">
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">롯데웨딩멤버스 회원약관</a></li>
+                <li><a href="#">영상정보처리관리방침</a></li>
+                <li><a href="#">임직원인증</a></li>
+            </ul>
+        </div>
+        <div class="copyright_bg">
+            <div class="copyright_wrap">
+                <div class="copyright_left">
+                    <img src="images/footer_logo.jpg">
+                    <p>롯데쇼핑㈜ 대표이사 강희태, 서울시 중구 소공동 1번지(도로명 주소 : 서울 특별시 중구 남대문로 81)<br>
+                        TEL : 1577-0001   L.POINT 콜센터 : 1899-8900   개인정보 변경 문의 : 1588-8100<br>
+                        COPYRIGHT© 2019 LOTTESHOPPING.CO.,LTD. ALL RIGHTS RESERVED.<br>
+                    </p>
+                </div>
+                <div class="copyright_right">
+                    <select name="lotteGroup">
+                        <option value="">롯데계열그룹사</option>
+                        <option value="롯데리아">롯데리아</option>
+                        <option value="롯데마트">롯데마트</option>
+                        <option value="롯데면세점">롯데면세점</option>
+                        <option value="롯데시네마">롯데시네마</option>
+                        <option value="롯데제과">롯데제과</option>
+                        <option value="롯데건설">롯데건설</option>
+                        <option value="롯데글로벌로지스">롯데글로벌로지스</option>
+                        <option value="롯데비피화학">롯데비피화학</option>
+                        <option value="롯데로지스틱스">롯데로지스틱스</option>
+                        <option value="롯데롭스">롯데롭스</option>
+                    </select>
+                    <a class="insta" href="https://www.instagram.com/lotteshopping_lottewedding/" target="_blank"><img src="images/insta.png"></a>
+                    <a class="kakao" href="https://accounts.kakao.com/login?continue=http%3A%2F%2Fpf.kakao.com%2F_xfxcrxlC%2Ffriend%3Fapi_ver%3D1.1%26kakao_agent%3Dsdk%252F1.39.1%2520os%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fwedding.lotteshopping.com%26app_key%3Df52f260e246594da4558e3c127cf0db9%26referer%3Dhttps%253A%252F%252Fwedding.lotteshopping.com%252F" target="_blank"><img src="images/kakao.png"></a>
+                </div>
+            </div>
+        </div>        
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/Script.js"></script>
+</body>
+</html>

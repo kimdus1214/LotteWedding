@@ -1,0 +1,866 @@
+@media screen and (min-width:760px) and (max-width:1200px){
+    #mobile_header{
+        display: none;
+    }
+    .accordion{
+        display: none;
+    }
+    .accordion button{
+        box-sizing: border-box;
+    }
+    
+    /* search클릭시 나오는 영역 */
+    .gnbSearchInput{
+        position: absolute;
+        top: 140px;
+        z-index: 9999999;
+        width: 100%;
+        /* height: 0; */
+        overflow: hidden;
+        height: 130px;
+        background-color: #ffffff;    
+        padding-top: 41px;
+        box-sizing: border-box;
+        opacity: .9;
+        display: none;
+    }
+    .gnbSearchInput .inputArea{
+        width: 72.91%;
+        height: 48px;
+        margin: auto;
+        position: relative;
+    }
+    .inputArea input {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #857668;
+        border-radius: 48px;
+        position: absolute;
+        padding-left: 3%;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .btnSearch{
+        position: absolute;
+        right: 1%;
+        top: 12px;
+    }
+    .btnSearchClose{
+        position: absolute;
+        right: 2%;
+        top: 49px;
+        width: 25px;
+        height: 25px;
+    }
+
+
+
+    header{
+        width: 100%;
+        height: 140px;
+        border-bottom: 1px solid #d1d1d1;
+    }    
+
+    .top_menu{
+        /* width: 1400px; */
+        width: 90%;
+        padding-top: 10px;
+        margin: auto;
+    }
+    .top_menu_wrap{
+        float: right;
+    }
+    .top_menu a{
+        display: inline-block;
+        margin-left: 12px;
+        color: #676767;
+        letter-spacing: -1px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 14px;
+    }
+    nav{
+        clear: both;
+        /* width: 1200px; */
+        width: 90%;
+        margin: auto;    
+    }
+    .logo,.main_nav{
+        float: left;
+    }
+    .logo{
+        display: block;
+        /* width: 267px; */
+        min-width: 23%;
+        height: 59px;
+        background-image: url('../images/logo.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 25px;
+    }
+    .main_nav{
+        /* margin-left: 180px; */
+        margin-left: 10%;
+        margin-top: 4px;
+        width: 61%;
+    }
+    .main_nav ul{
+        width: 100%;
+    }
+    .main_nav .main_nav_gnb{
+        float: left;
+        height: 100px;
+        /* width: 150px; */
+        width: 24%;
+        position: relative;
+        /* overflow: hidden; */
+    }
+
+    .main_nav .main_nav_gnb>a{
+        display: block;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        letter-spacing: -1px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+        color: #272727;
+    }
+    .main_nav_gnb::after{
+        content: '';
+        display: block;
+        border-bottom:3px solid #857668;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        position: relative;
+        top: 0px;
+        z-index: 99999;
+    }
+    .main_nav_gnb:hover::after{
+        transform: scaleX(1);
+    }
+    .main_nav_gnb:hover a{
+        color: #857668;
+    }
+    .main_nav_gnb:hover .main_nav_depth{
+        background-color: #f8f8f8;
+    }
+    .main_nav_gnb:hover .main_nav_depth{
+        height: 300px;
+        transition: 1s;
+    }
+    .main_nav li:hover .hidden_nav_wrap{
+        height: 300px;
+        transition: 1s;
+    }
+    .main_nav_depth{
+        position: absolute;
+        padding-top: 25px;
+        /* height: 330px; */
+        height: 0;
+        box-sizing: border-box;
+        z-index: 99999;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main_nav_depth>li>a{
+        color:#676767;
+        letter-spacing: -1px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+    }
+    .main_nav_depth li:hover a{
+        color:#272727;
+    }
+
+    .search{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('../images/search.jpg');
+        float: right;
+        margin-top: 35px;
+    }
+    .hidden_nav_wrap{
+        width: 100%;
+        /* height: 330px; */
+        height: 0;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 99998;
+        /* display: none; */
+    }
+
+
+    /* 모바일크기 메뉴 */
+    @media screen and (max-width:1030px){
+        header{
+            display: none;
+        }
+        #mobile_header{
+            display: block;
+            width: 100%;
+            height: 55px;
+        }
+        #mobile_top_wrap {
+            position: relative;
+            z-index: 999999;
+            width: 100%;
+            height: 100%;
+        }
+        #mobile_top_wrap a{
+            position: absolute;
+            display: block;
+        }
+        #mobile_top_wrap img{
+            width: 93%;
+            height: 93%;
+        }
+        .m_logo{
+            width: 226px;
+            height: 42px;
+            left:50%;
+            margin-left: -113px;
+            margin-top: 7px;
+        }
+        .toggle{
+            width: 24px;
+            height: 24px;
+            left: 2%;
+            margin-top: 15px;
+        }
+        .m_login{
+            width: 24px;
+            height: 24px;
+            right: 2%;
+            margin-top: 15px;
+        }
+    }
+
+
+    main{
+        width: 100%;
+        height: 740px;
+    }
+
+    #main_img_wrap{
+        width: 100%;
+        height: 740px;
+    }
+    .main_img{
+        position: relative;
+        width: 100%;
+        height: 740px;
+        margin: auto;
+    }
+    .main_img li{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .main_text_wrap{    
+        /* width: 1400px; */
+        width: 90%;
+        margin: auto;
+        /* margin-left: -700px; */
+        position: relative;
+        top: 193px;
+    }
+    .main01{
+        background-color: #e2ddd1;
+        background-image: url('../images/main01.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main02{
+        background-color: #e3dfdb;
+        background-image: url('../images/main02.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+    }
+    .main03{
+        background-color: #e6e1dd;   
+        background-image: url('../images/main03.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+    }
+    .main_text_wrap h6{
+        color:#252525;
+        letter-spacing: 1px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .main_text_wrap h6::after{
+        content: "";
+        width: 58px;
+        border-bottom: 1px solid #252525;
+        position: absolute;
+        left: 0;
+        top: 40px;
+    }
+    .main_text_wrap h3{
+        color:#252525;
+        letter-spacing: -1px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    .main_text_wrap p{
+        color:#252525;
+        letter-spacing: -1px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    #main_arrow{
+        position: relative;
+        /* width: 1400px; */
+        width: 90%;
+        margin: auto;
+        bottom: 292px;
+    }
+    #main_arrow span{
+        display: inline-block;
+        width: 85px;
+        height: 85px;
+        border: 1px solid #252525;
+        text-align: center;
+        line-height: 85px;
+        font-size: 38px;
+        cursor: pointer;
+    }
+
+
+    /* LOTTE WEDDING 영역 */
+    #wedding_wrap{
+        margin-top: 174px;
+        position: relative;
+        min-height: 600px;
+        /* height: 1000px; */
+    }
+    .main_tit{        
+        margin: auto;
+        text-align: center;
+    }
+    .main_tit h3{
+        color: #272727;
+        font-size: 30px;
+        font-family: 'Myriad Pro';
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .main_tit p{
+        color: #272727;
+        letter-spacing: 1px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        margin-top: 8px;
+    }
+    
+    .main_content{        
+        margin-top: 80px;
+        position: relative;        
+    }
+    .wedding_text_wrap{
+        width:55%;
+        min-height: 525px;
+        padding-top: 100px;
+        box-sizing: border-box;
+        position: absolute;
+        background-color: #f0f0f0;
+        /* padding: 100px 360px; */
+    }
+    .wedding_text_wrap span{
+        margin-top: 100px;
+        margin-left: 9.71%;
+        color: #3b3b3b;
+        font-size: 20px;
+        font-family: 'Myriad Pro';
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .wedding_text_wrap h4{
+        margin-top: 10px;
+        margin-left: 9.71%;
+        color: #3b3b3b;
+        font-size: 35px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+    .wedding_text_wrap p{
+        margin-top: 20px;
+        margin-left: 9.71%;
+        color: #3b3b3b;
+        font-size: 25px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        letter-spacing: -1px;
+    }
+    .btn_wrap{
+        margin-left: 9.71%;
+        margin-top: 100px;
+        position: absolute;
+    }
+    .btn_wrap a{
+        display: block;
+        width:80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #848484;
+        color: #848484;
+        font-size: 15px;
+        font-family: 'Myriad Pro';
+        letter-spacing: 1px;
+        position: absolute;
+    }
+    .btn_wrap a:hover{
+        background-color: #848484;
+        color: #fff;
+        transition: 0.5s;
+    }
+
+    .btn_arrow_wrap{
+        position: absolute;
+        top: 389px;
+        left: 30%;
+    }
+    .btn_arrow_wrap li{
+        float: left;
+        width:35px;
+        height: 35px;
+        border-radius: 35px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .btn_arrow_wrap li:first-child{
+        background-image: url('../images/main_text_arrow_left.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 0px;
+    }
+    .btn_arrow_wrap li:last-child{
+        background-image: url('../images/main_text_arrow_right.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .btn_arrow_wrap li:hover{
+        border: 1px solid #7d7d7d;
+    }
+
+    .wedding_img_wrap{
+        position: relative;
+        left: 50%;
+        top: 75px;
+        width: 50%;
+        min-height: 525px;
+        overflow: hidden;
+    }
+    .wedding_img_wrap ol{
+        position: absolute;
+        width: 1665px;
+        min-height: 525px;
+    }
+    .wedding_img_wrap li{
+        float: left;
+        width: 525px;
+        height: 525px;
+        margin-left: 45px;
+    }
+    .wedding_img_wrap li:first-child{
+        margin-left: 0;
+    }
+    .wedding_img_wrap img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .wedding_img_wrap_mobile{
+        display: none;
+    }
+    .btn_arrow_wrap_mo{
+        display: none;
+    }
+
+    .veiwbtn_wrap{
+        width: 100%;
+        height: 45px;
+        margin-top: 150px;
+    }
+    .veiwBtn{
+        position: relative;
+        margin-top: 50px;
+        display: block;
+        width: 120px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        color: #222222;
+        font-size: 18px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        letter-spacing: -1px;
+        border: 1px solid #222222;
+        left: 50%;
+        margin-left: -60px;
+    }
+    .veiwBtn:hover{
+        background-color: #222222;
+        color: #ffff;
+        transition: 0.5s;
+    }
+
+    #WeddingPick_wrap{
+        position: relative;
+        margin-top: 124px; 
+    }
+
+    .WeddingPick_content{
+        margin:auto;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 82px; 
+    }
+    .WeddingPick_content li{    
+        width: 50%;
+        /* height: 1000px; */
+        border-right: 1px solid #e3e3e3;
+        box-sizing: border-box;
+        /* padding-left: 30px; */
+        padding-left: 2.5%;
+    }
+    .WeddingPick_content li:nth-child(2){
+        border-right:0;
+    }
+    .soonHide{
+        display: none;
+    }
+    .event_wrap{
+        width: 95%;
+        min-height: 446px;
+        background-image: url('../images/weddingPick_event.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 55px;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+    }
+    .event_wrap span{
+        display: block;
+        color: #ffffff;
+        font-size: 15px;
+        font-family: 'Myriad Pro';
+        font-weight: 600;
+    }
+    .event_wrap p{
+        color: #ffffff;
+        font-size: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        /* letter-spacing: -1px; */
+        margin-top: 20px;
+    }
+    .event_wrap a{
+        display: block;
+        width: 98px;
+        height: 35px;
+        border: 1px solid #ffffff;
+        position: absolute;
+        bottom: 65px;
+        left: 50%;
+        margin-left: -49px;
+        color: #ffffff;
+        font-size: 15px;
+        font-family: 'Myriad Pro';
+        font-weight: 500;
+        line-height: 35px;
+    }
+    .event_wrap a:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: 0.5s;
+    }
+
+    .pc_weddingPick_gallery_wrap{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    .mo_weddingPick_gallery{
+        width: 95%;
+        height: auto;
+    }
+    .mo_weddingPick_gallery .weddingPick_gallery{
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .weddingPick_gallery img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .weddingPick_gallery h6{
+        width: 100%;   
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 18px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .weddingPick_gallery span{
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        letter-spacing: -1px;
+    }
+    .top{
+        margin-bottom: 20px;
+    }
+
+
+    /* online_inquiry영역 */
+    #online_inquiry_wrap{
+        margin-top: 165px;
+        width: 100%;
+        min-height: 465px;
+        background-image: url('../images/online_inquiry_bg.jpg');
+        background-attachment: fixed;  
+        background-position: center;
+        background-repeat: no-repeat;    
+        background-size: cover;
+    }
+    .online_inquiry{
+        background-color: rgba(74, 66, 59, .3);
+        width: 100%;
+        height: 465px;
+        text-align: center;
+        position: relative;
+        padding-top: 110px;
+        box-sizing: border-box;
+    }
+    .online_inquiry strong{
+        font-size: 40px;
+        font-family: 'Myriad Pro';
+        font-weight: 600;
+        color: #ffffff;
+        display: block;
+        letter-spacing: 2px;
+    }
+    .online_inquiry span{
+        display: block;
+        margin-top: 15px;
+        font-size: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+        line-height: 30px;
+    }
+    .online_inquiry a{
+        display: block;
+        width: 150px;
+        height: 45px;
+        border: 1px solid #ffffff;
+        text-align: center;
+        line-height: 45px;
+        font-size: 18px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        margin-left: -75px;
+    }
+    .online_inquiry a:hover{
+        background-color: rgba(27, 26, 26, 0.3);
+        transition: 0.5s;
+    }
+
+
+    /* Wedding_consulting_wrap영역 */
+    #Wedding_consulting_wrap{
+        margin-top: 125px;
+        position: relative;
+    }
+    .Wedding_consulting_content{
+        margin-top: 60px;
+    }
+    .tab_btn{
+        text-align: center;
+        position: relative;
+    }
+    .tab_btn li{
+        display: inline-block;
+        padding:5px 20px;
+        font-size: 18px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        color: #888888;
+        cursor: pointer;
+    }
+
+    /* tab_menu 선택시 효과 */
+    .tab_btn li::after{
+        content: '';
+        display: block;
+        border-bottom:3px solid #857668;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        position: relative;
+        top: 0;
+        z-index: 99999;
+    }
+
+    .tab_content_wrap{
+        width: 72.91%;
+        margin: auto;
+        margin-top: 40px;    
+    }
+    .tab_content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .tab_content img{
+        width: 50%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+
+    .wrap02{
+        display: none;
+    }
+    .wrap03{
+        display: none;
+    }
+    .wrap04{
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 125px;
+        /* position: relative; */
+        border-top: 1px solid #e3e3e3;
+    }
+    .copyright_bg{
+        width: 100%;
+        height: 350px;
+        background-color: #a59588;
+    }
+    .copyright_wrap{
+        /* width: 1200px; */
+        width: 72.91%;
+        height: 100%;
+        margin: auto;
+        padding-top: 45px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    .copyright_wrap div{    
+        float: left;
+    }
+    .copyright_left img{
+        display: block;
+        width: 200px;
+        height:auto;
+    }
+    .copyright_left p{
+        margin-top: 15px;
+        color: #564537;
+        font-size: 16px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+    }
+    .copyright_right{
+        /* position: absolute;
+        bottom: 20px;  */
+        margin-top: 25px;
+    }
+    select{
+        display: block;
+        background-color: #a59588;
+        border: 1px solid #574639;
+        padding: .6em 1.4em .5em .8em;
+        font-family: "Noto Sansf KR", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #574639;
+        margin-bottom: 25px;
+        margin-top: 6px;
+        float: left;
+        outline: none;
+    }
+    option{
+        color: #3b3b3b;
+        background-color: #f0f0f0;
+    }
+    .copyright_right a{
+        display: inline-block;
+        width: 54px;
+        height: 54px;
+        /* margin-left: 6px; */
+    }
+    .copyright_right .insta{
+        margin-left: 54px;
+    }
+
+    .footer_wrap{
+        /* width: 1200px; */
+        width: 100%;
+        height: 60px;
+        margin: auto;
+    }
+    .footer_wrap ul{
+        height: 60px;
+        float: right;
+    }
+    .footer_wrap li{
+        float: left;
+        padding: 15px;
+    }
+    .footer_wrap a{
+        font-size: 105%;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        color: #767676;
+    }
+
+
+    
+    @media screen and (max-width:785px){
+        .footer_wrap{display: none;} 
+    }
+
+    
+
+    
+}
