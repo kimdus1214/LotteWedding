@@ -49,7 +49,8 @@ input {
     border:0;
     border-bottom: 1px solid #ddd;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #ddd;
+    color: #555;
+    outline: none;
 }
 
 button[name=keySearch] {
