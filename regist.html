@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
+    <title>회원가입</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -174,25 +174,36 @@
 
     <div id="wrap">
         <div class="form-signin">
-            <form class="loginFormWrap" method="POST" action="/member/login">
-              <h2 class="text-center">로그인</h2>
+            <form class="loginFormWrap" method="POST" action="/member/regist">
+              <h2 class="text-center">웨딩멤버스가입</h2>
               <p class="mb-4 text-center">L.POINT 통합 회원은 롯데서비스를 하나의 ID 로 이용할 수 있습니다.</p>
           
               <div class="form-wrap">
                 <label>
-                    <span>로그인</span>
+                    <span>아이디</span>
                     <input type="text" name="userid" placeholder="아이디 또는 이메일을 입력해주세요">
                 </label>
               </div>
               <div class="form-wrap">
                 <label>
                     <span>비밀번호</span>
-                    <input type="text"  name="userpw" placeholder="비밀번호를 입력해주세요">
+                    <input type="password" name="userpw" placeholder="비밀번호를 입력해주세요">
                 </label>
-              </div>          
+              </div>
+              <div class="form-wrap">
+                <label>
+                    <span>이름</span>
+                    <input type="text" name="username" placeholder="이름을 입력해주세요">
+                </label>
+              </div>
+              <div class="form-wrap">
+                <label>
+                    <span>나이</span>
+                    <input type="text" name="age" placeholder="성별을 입력해주세요">
+                </label>
+              </div>     
               
-              <button class="mt-4" type="submit">로그인</button>
-              <a class="regist mt-2" href="regist.html">회원가입</a>
+              <button class="mt-4" type="submit">회원가입</button>
             </form>
         </div>
     </div>
