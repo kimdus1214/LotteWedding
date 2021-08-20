@@ -27,7 +27,6 @@ function connectDB() {
     });
 }
 
-
 app.get('/login', (req, res)=>{
     fs.readFile('login.html', 'utf8', (err, data)=>{
         if(!err){
@@ -36,7 +35,7 @@ app.get('/login', (req, res)=>{
         }else{
             console.log(err);
         }
-    })
+    });
 });
 app.get('/loginFail', (req, res)=>{
     fs.readFile('loginFail.html', 'utf8', (err, data)=>{
@@ -46,11 +45,10 @@ app.get('/loginFail', (req, res)=>{
         }else{
             console.log(err);
         }
-    })
+    });
 });
 
 
-//로그인 처리
 //회원가입
 //http://localhost:5500/member/regist method:POST
 router.route('/member/regist').post((req, res) => {
@@ -62,14 +60,30 @@ router.route('/member/regist').post((req, res) => {
 
     console.log(`userid:${userid}, userpw:${userpw}, name:${username}, age:${age}`);
 
+    if(!userid || !userpw || !username || !age){
+        fs.readFile('./regist.html', 'utf8', (err, data)=>{
+            if(!err){
+                res.writeHead(200, {'content-type' : 'text/html'});
+                res.end(data);
+            }else{
+                console.log(err);
+            }
+        });
+        return false;
+    }
+
     if(database){
         joinMember(database, userid, userpw, username, age, (err, result) => { 
             if(!err){
                 if(result.insertedCount > 0){
-                    res.writeHead('200', {'content-type':'text/html;charset=utf8'});
-                    res.write('<h2>회원가입 성공</h2>');
-                    res.write('<p>가입이 성공적으로 완료되었습니다.</p>');
-                    res.end();
+                    fs.readFile('./index.html', 'utf8', (err, data)=>{
+                        if(!err){
+                            res.writeHead(200, {'content-type' : 'text/html'});
+                            res.end(data);
+                        }else{
+                            console.log(err);
+                        }
+                    });
                 }else{
                     res.writeHead('200', {'content-type':'text/html;charset=utf8'});
                     res.write('<h2>회원가입 실패</h2>');
@@ -100,6 +114,18 @@ router.route('/member/login').post((req,res)=>{
 
     console.log(`${userid} , ${userpw}`);
 
+    if(!userid || !userpw){
+        fs.readFile('./login.html', 'utf8', (err, data)=>{
+            if(!err){
+                res.writeHead(200, {'content-type' : 'text/html'});
+                res.end(data);
+            }else{
+                console.log(err);
+            }
+        });
+        return false;
+    }
+
     if(database){
         loginMember(database, userid, userpw, (err, result) => {
             if(!err){
@@ -121,10 +147,14 @@ router.route('/member/login').post((req,res)=>{
                     });
 
                 }else{
-                    res.writeHead('200', {'content-type':'text/html;charset=utf8'});
-                    res.write('<h2>로그인 실패</h2>');
-                    res.write('<p>아이디 또는 비밀번호를 확인하세요.</p>');
-                    res.end();
+                    fs.readFile('loginFail.html','utf-8',(err,data)=>{
+                        if(!err){
+                            res.writeHead(200,{'content-type' : 'text/html;charset=utf-8'});
+                            res.end(data);
+                        } else{
+                            console.log(err);
+                        }
+                    });
                 }
             }else{
                 res.writeHead('200', {'content-type':'text/html;charset=utf8'});

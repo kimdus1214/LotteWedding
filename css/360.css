@@ -5,6 +5,10 @@
     .accordion{
         display: none;
         padding: 0;
+        top: 55px;
+        width: 100%;
+        z-index: 99;
+        position: absolute;
     }
     .accordion button{
         box-sizing: border-box;

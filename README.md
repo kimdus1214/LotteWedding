@@ -19,8 +19,8 @@
 <br><br>
 
 4. 사용한 기술
-- HTML
-- CSS
-- bootstrap
-- JS/jquery
-- node.js 로그인/회원가입 기능추가(몽고디비 사용)
+- HTML   
+- CSS   
+- bootstrap   
+- JS/jquery   
+- node.js 로그인/회원가입 기능 추가(몽고디비 사용)

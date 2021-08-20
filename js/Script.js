@@ -237,23 +237,19 @@ $(document).ready(function () {
 
 
     // FAQ Area
-    var faqClicknum = 0;
+    // var faqClicknum = 0;
     $('.faq li').click(function(){
-        ++faqClicknum;
-        if(faqClicknum %2 == 0){
-            $(this).animate({
-                height:'430px'
-            });
-            var faqHeight =  $('.faq li').not($(this)).height();
-            if(faqHeight == 430){
+        var faqHeight = $(this).height();
+        if(faqHeight == 80){
+            $(this).css('height','auto');
+            var faqs = $('.faq li').not($(this)).css('height');
+            if(faqs != 80){
                 $('.faq li').not($(this)).animate({
-                    height:'80px'
+                    height: '80px'
                 });
             }
-        }else {
-            $(this).animate({
-                height:'80px'
-            });
+        }else{
+            $(this).css('height','80px');
         }
     });
 
